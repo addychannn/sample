@@ -139,7 +139,7 @@ const SingleUpload = (props) => {
         <CustTab
           label1={"Preview"}
           label2={"JSX"}
-          chartTab={
+          tabContent={
             <Box>
               <Paper
                 elevation={0}

@@ -1,6 +1,7 @@
 // import {COMPONENT} from "./components";
 
 import {fontSize} from "@mui/system";
+import {OrderFilter} from "../components/GenericComponents/GeneralComponents/RadioGroupComponent";
 import {HRIcon} from "../components/SVGComponents";
 
 // export const MENUITEMS = [
@@ -28,6 +29,7 @@ export const USERS = [
     personalEmail: "adelynnemalubay@gmail.com",
     workEmail: "adarm@nms.ph",
     category: "Office Based",
+    status: "Active",
   },
   {
     id: 2,
@@ -36,6 +38,34 @@ export const USERS = [
     personalEmail: "celineTerrado@gmail.com",
     workEmail: "clt@nms.ph",
     category: "Office Based",
+    status: "Inactive",
+  },
+  {
+    id: 3,
+    image: "/public/images/Avatar1.png",
+    fullName: "Marjon Doping",
+    personalEmail: "marjonDoping@gmail.com",
+    workEmail: "marjon@nms.ph",
+    category: "Office Based",
+    status: "Inactive",
+  },
+  {
+    id: 4,
+    image: "/public/images/Avatar1.png",
+    fullName: "Von Perez",
+    personalEmail: "vonPerez@gmail.com",
+    workEmail: "von@nms.ph",
+    category: "Office Based",
+    status: "Inactive",
+  },
+  {
+    id: 5,
+    image: "/public/images/Avatar1.png",
+    fullName: "Elmer Bautista",
+    personalEmail: "elmerBautista@gmail.com",
+    workEmail: "elmer@nms.ph",
+    category: "Office Based",
+    status: "Active",
   },
 ];
 
@@ -176,6 +206,15 @@ export const TYPOGRAPHIES = [
     text: "BUTTON SMALL",
     fontSize: "13px",
     subtext: "size: 13 / l-height: 22 / weight:700 / letterSpacing: 0.46px",
+  },
+];
+
+export const FILTER_LIST = [
+  {
+    id: 1,
+    label: "Order",
+    panel: "panel1",
+    options: <OrderFilter />,
   },
 ];
 
@@ -344,6 +383,54 @@ export const SECONDARY_COLORS = [
   },
 ];
 
+export const INFO_COLORS = [
+  {
+    id: 1,
+    color_name: "100",
+    color_hex: "#CBFEFA",
+  },
+  {
+    id: 2,
+    color_name: "200",
+    color_hex: "#97FDFD",
+  },
+  {
+    id: 3,
+    color_name: "300",
+    color_hex: "#63EEF9",
+  },
+  {
+    id: 4,
+    color_name: "400",
+    color_hex: "#3DD9F4",
+  },
+  {
+    id: 5,
+    color_name: "Main",
+    color_hex: "#00B9ED",
+  },
+  {
+    id: 6,
+    color_name: "600",
+    color_hex: "#0090CB",
+  },
+  {
+    id: 7,
+    color_name: "700",
+    color_hex: "#006CAA",
+  },
+  {
+    id: 8,
+    color_name: "800",
+    color_hex: "#006CAA",
+  },
+  {
+    id: 9,
+    color_name: "900",
+    color_hex: "#003771",
+  },
+];
+
 export const SUCCESS_COLORS = [
   {
     id: 1,
@@ -389,5 +476,149 @@ export const SUCCESS_COLORS = [
     id: 9,
     color_name: "900",
     color_hex: "#186C0A",
+  },
+];
+
+export const WARNING_COLORS = [
+  {
+    id: 1,
+    color_name: "100",
+    color_hex: "#FFF6D8",
+  },
+  {
+    id: 2,
+    color_name: "200",
+    color_hex: "#FFEBB2",
+  },
+  {
+    id: 3,
+    color_name: "300",
+    color_hex: "#FFDD8B",
+  },
+  {
+    id: 4,
+    color_name: "400",
+    color_hex: "#FFCF6F",
+  },
+  {
+    id: 5,
+    color_name: "Main",
+    color_hex: "#FFB83F",
+  },
+  {
+    id: 6,
+    color_name: "600",
+    color_hex: "#DB942E",
+  },
+  {
+    id: 7,
+    color_name: "700",
+    color_hex: "#B7731F",
+  },
+  {
+    id: 8,
+    color_name: "800",
+    color_hex: "#935614",
+  },
+  {
+    id: 9,
+    color_name: "900",
+    color_hex: "#7A400C",
+  },
+];
+
+export const DANGER_COLORS = [
+  {
+    id: 1,
+    color_name: "100",
+    color_hex: "#FEE8E2",
+  },
+  {
+    id: 2,
+    color_name: "200",
+    color_hex: "#FECCC5",
+  },
+  {
+    id: 3,
+    color_name: "300",
+    color_hex: "#FDAAA7",
+  },
+  {
+    id: 4,
+    color_name: "400",
+    color_hex: "#FB9197",
+  },
+  {
+    id: 5,
+    color_name: "Main",
+    color_hex: "#F96D82",
+  },
+  {
+    id: 6,
+    color_name: "600",
+    color_hex: "#D64F70",
+  },
+  {
+    id: 7,
+    color_name: "700",
+    color_hex: "#B33660",
+  },
+  {
+    id: 8,
+    color_name: "800",
+    color_hex: "#902251",
+  },
+  {
+    id: 9,
+    color_name: "900",
+    color_hex: "#771448",
+  },
+];
+
+export const NEUTRAL_COLORS = [
+  {
+    id: 1,
+    color_name: "100",
+    color_hex: "#F9FAFB",
+  },
+  {
+    id: 2,
+    color_name: "200",
+    color_hex: "#F4F6F8",
+  },
+  {
+    id: 3,
+    color_name: "300",
+    color_hex: "#DFE3E8",
+  },
+  {
+    id: 4,
+    color_name: "400",
+    color_hex: "#C4CDD5",
+  },
+  {
+    id: 5,
+    color_name: "Main",
+    color_hex: "#919EAB",
+  },
+  {
+    id: 6,
+    color_name: "600",
+    color_hex: "#637381",
+  },
+  {
+    id: 7,
+    color_name: "700",
+    color_hex: "#454F5B",
+  },
+  {
+    id: 8,
+    color_name: "800",
+    color_hex: "#212B36",
+  },
+  {
+    id: 9,
+    color_name: "900",
+    color_hex: "#161C24",
   },
 ];

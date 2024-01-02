@@ -7,6 +7,7 @@ const PageHeadingComponent = ({
   variant,
   subheading2,
   link,
+  link2,
   fontWeight,
   sx,
   icon,
@@ -25,8 +26,11 @@ const PageHeadingComponent = ({
         </Typography>
       </Stack>
 
-      <Typography variant="h5">{subheading2}</Typography>
-      <Typography color="primary">{link}</Typography>
+      <Stack sx={{paddingBottom: 4}}>
+        <Typography variant="h5">{subheading2}</Typography>
+        <Typography color="primary">{link}</Typography>
+        <Typography color="primary">{link2}</Typography>
+      </Stack>
     </Stack>
   );
 };
