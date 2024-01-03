@@ -378,7 +378,7 @@ const lightTheme = createTheme({
               borderRadius: 0,
               padding: "24px",
             },
-            backgroundColor: "#081332",
+            backgroundColor: "",
           },
           ".MuiDialogContent-root": {
             padding: "15px 15px 15px 0",

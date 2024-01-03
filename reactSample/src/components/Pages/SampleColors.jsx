@@ -1,5 +1,5 @@
-import {Box, Grid, Paper, Stack, Typography} from "@mui/material";
-import React, {Fragment, useState} from "react";
+import { Box, Grid, Paper, Stack, Typography } from "@mui/material";
+import React, { Fragment, useState } from "react";
 import {
   PRIMARY_COLORS,
   SECONDARY_COLORS,
@@ -10,7 +10,7 @@ import {
   NEUTRAL_COLORS,
 } from "../../config/data";
 import PageHeadingComponent from "../GenericComponents/GeneralComponents/PageHeadingComponent";
-import {BoxMinimalistic} from "../SVGComponents";
+import { BoxMinimalistic } from "../SVGComponents";
 import CopyToClipboard from "react-copy-to-clipboard";
 import CustSnackbar from "../GenericComponents/GeneralComponents/CustSnackbar";
 
@@ -45,8 +45,8 @@ export const SampleColors = () => {
       />
       <Grid container spacing={4}>
         <Grid item desktop={4}>
-          <Paper style={{display: "flex", flexDirection: "column", gap: "8px"}}>
-            <Box sx={{paddingBottom: "48px"}}>
+          <Paper style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+            <Box sx={{ paddingBottom: "48px" }}>
               <Typography variant="h4">Primary</Typography>
             </Box>
 
@@ -78,8 +78,8 @@ export const SampleColors = () => {
           </Paper>
         </Grid>
         <Grid item desktop={4}>
-          <Paper style={{display: "flex", flexDirection: "column", gap: "8px"}}>
-            <Box sx={{paddingBottom: "48px"}}>
+          <Paper style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+            <Box sx={{ paddingBottom: "48px" }}>
               <Typography variant="h4">Secondary</Typography>
             </Box>
             {SECONDARY_COLORS.map((color) => (
@@ -110,8 +110,8 @@ export const SampleColors = () => {
           </Paper>
         </Grid>
         <Grid item desktop={4}>
-          <Paper style={{display: "flex", flexDirection: "column", gap: "8px"}}>
-            <Box sx={{paddingBottom: "48px"}}>
+          <Paper style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+            <Box sx={{ paddingBottom: "48px" }}>
               <Typography variant="h4">Info</Typography>
             </Box>
             {INFO_COLORS.map((color) => (
@@ -142,8 +142,8 @@ export const SampleColors = () => {
           </Paper>
         </Grid>
         <Grid item desktop={4}>
-          <Paper style={{display: "flex", flexDirection: "column", gap: "8px"}}>
-            <Box sx={{paddingBottom: "48px"}}>
+          <Paper style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+            <Box sx={{ paddingBottom: "48px" }}>
               <Typography variant="h4">Success</Typography>
             </Box>
             {SUCCESS_COLORS.map((color) => (
@@ -174,8 +174,8 @@ export const SampleColors = () => {
           </Paper>
         </Grid>
         <Grid item desktop={4}>
-          <Paper style={{display: "flex", flexDirection: "column", gap: "8px"}}>
-            <Box sx={{paddingBottom: "48px"}}>
+          <Paper style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+            <Box sx={{ paddingBottom: "48px" }}>
               <Typography variant="h4">Warning</Typography>
             </Box>
             {WARNING_COLORS.map((color) => (
@@ -206,8 +206,8 @@ export const SampleColors = () => {
           </Paper>
         </Grid>
         <Grid item desktop={4}>
-          <Paper style={{display: "flex", flexDirection: "column", gap: "8px"}}>
-            <Box sx={{paddingBottom: "48px"}}>
+          <Paper style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+            <Box sx={{ paddingBottom: "48px" }}>
               <Typography variant="h4">Danger</Typography>
             </Box>
             {DANGER_COLORS.map((color) => (
@@ -238,8 +238,8 @@ export const SampleColors = () => {
           </Paper>
         </Grid>
         <Grid item desktop={4}>
-          <Paper style={{display: "flex", flexDirection: "column", gap: "8px"}}>
-            <Box sx={{paddingBottom: "48px"}}>
+          <Paper style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
+            <Box sx={{ paddingBottom: "48px" }}>
               <Typography variant="h4">Neutral</Typography>
             </Box>
             {NEUTRAL_COLORS.map((color) => (

@@ -1,19 +1,22 @@
-import {Button} from "@mui/material";
-import {Grid, Typography} from "@mui/material";
-import {Stack} from "@mui/system";
-import {useSnackbar} from "notistack";
-import React, {Fragment, useState} from "react";
-import {CustDialog} from "../../GenericComponents/GeneralComponents/CustDialog";
+import { Button } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
+import { Stack } from "@mui/system";
+import { useSnackbar } from "notistack";
+import React, { Fragment, useState } from "react";
+import { CustDialog } from "../../GenericComponents/GeneralComponents/CustDialog";
+import CustSnackbar from "../../GenericComponents/GeneralComponents/CustSnackbar";
 
 export const Dialogs = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
   const [isOpen3, setIsOpen3] = useState(false);
-  const [isSubDialog, setIsSubDialog] = useState(false);
-
   const [isOpen4, setIsOpen4] = useState(false);
+  const [isSubDialog, setIsSubDialog] = useState(false);
+  const [snackbarOpen, setSnackbarOpen] = useState(false);
+  const [snackbarMessage, setSnackbarMessage] = useState("");
+  const [snackbarSeverity, setSnackbarSeverity] = useState("");
 
-  const {enqueueSnackbar, closeSnackbar} = useSnackbar();
+
 
   const handleClose = () => {
     setIsOpen(false);
@@ -31,8 +34,13 @@ export const Dialogs = () => {
   const handleSaveWithSnackbar = () => {
     setIsOpen4(false);
 
-    // Show a Snackbar when SAVE is clicked
-    enqueueSnackbar("Dialog saved!", {variant: "success"});
+    setSnackbarMessage(`Success Dialog uwu`);
+    setSnackbarSeverity("success");
+    setSnackbarOpen(true);
+  };
+
+  const handleSnackbarClose = () => {
+    setSnackbarOpen(false);
   };
 
   return (
@@ -110,7 +118,7 @@ export const Dialogs = () => {
         isOpen={isSubDialog}
         actions={
           <Fragment>
-            <Button color="secondary" variant="outlined">
+            <Button color="primary" variant="outlined">
               CANCEL
             </Button>
             <Button onClick={handleSaveSubDialog}>SAVE</Button>
@@ -126,7 +134,7 @@ export const Dialogs = () => {
         isOpen={isOpen4}
         actions={
           <Fragment>
-            <Button color="secondary" variant="outlined">
+            <Button color="primary" variant="outlined">
               CANCEL
             </Button>
             <Button onClick={handleSaveWithSnackbar}>SAVE</Button>
@@ -134,7 +142,14 @@ export const Dialogs = () => {
         }
       >
         <Typography>snackbar</Typography>
+        <CustSnackbar
+          open={snackbarOpen}
+          onClose={handleSnackbarClose}
+          message={snackbarMessage}
+          severity={snackbarSeverity}
+        />
       </CustDialog>
+
     </Fragment>
   );
 };

@@ -1,18 +1,18 @@
-import {useTheme} from "@emotion/react";
-import {AppBar, GlobalStyles, Toolbar} from "@mui/material";
-import {Box} from "@mui/system";
-import React, {Fragment, useTransition} from "react";
-import {useStyles} from "../../hooks/useStyles";
+import { useTheme } from "@emotion/react";
+import { AppBar, GlobalStyles, Toolbar } from "@mui/material";
+import { Box } from "@mui/system";
+import React, { Fragment, useTransition } from "react";
+import { useStyles } from "../../hooks/useStyles";
 import useWindowResize from "../../hooks/useWindowSize";
-import {useContentSizes} from "../../hooks/useContentSizes";
+import { useContentSizes } from "../../hooks/useContentSizes";
 
 const Base = () => {
-  const {height, width} = useWindowResize();
+  const { height, width } = useWindowResize();
   const theme = useTheme();
-  const [{showTransition}] = useTransition();
-  const {classes} = useStyles();
+  const [{ showTransition }] = useTransition();
+  const { classes } = useStyles();
   const [initialState, actions] = useStore();
-  const {contentSizes} = useContentSizes();
+  const { contentSizes } = useContentSizes();
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleHoverIn = () => {
@@ -51,7 +51,7 @@ const Base = () => {
   }, [height, width, theme, initialState.drawerMode]);
 
   return (
-    <Box height="100vh" sx={{overflowY: "hidden"}}>
+    <Box height="100vh" sx={{ overflowY: "hidden" }}>
       <GlobalStyles
         styles={{
           ...classes.global,
