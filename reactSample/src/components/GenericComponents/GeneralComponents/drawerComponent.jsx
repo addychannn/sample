@@ -1,5 +1,5 @@
-import {Drawer, Icon, IconButton} from "@mui/material";
-import {Box} from "@mui/system";
+import { Drawer, Icon, IconButton } from "@mui/material";
+import { Box } from "@mui/system";
 import React from "react";
 
 export const drawerComponent = () => {
@@ -47,7 +47,7 @@ export const FilterDrawer = () => {
           </IconButton>
         </Box>
 
-        
+
       </Drawer>
     </div>
   );

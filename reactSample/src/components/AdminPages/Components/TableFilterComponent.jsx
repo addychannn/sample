@@ -1,7 +1,8 @@
-import {Dropdown} from "@mui/base";
-import {Accordion, AccordionSummary, Paper, Typography} from "@mui/material";
-import React, {Fragment} from "react";
-import {FILTER_LIST} from "../../../config/data";
+
+import { Accordion, AccordionSummary, Paper, Typography } from "@mui/material";
+import React, { Fragment } from "react";
+import { FILTER_LIST } from "../../../config/data";
+import { DropdownIcon } from "../../SVGComponents";
 
 export const DesktopAccountManagementFilter = () => {
   const [expanded, setExpanded] = useState(false);

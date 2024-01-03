@@ -8,34 +8,34 @@ import {
   Tooltip,
   Typography,
 } from "@mui/material";
-import {DataGrid} from "@mui/x-data-grid";
-import React, {Fragment} from "react";
-import {USERS} from "../../../config/data";
-import {CustTab} from "../../GenericComponents/GeneralComponents/CustTab";
+import { DataGrid } from "@mui/x-data-grid";
+import React, { Fragment } from "react";
+import { USERS } from "../../../config/data";
+import { CustTab } from "../../GenericComponents/GeneralComponents/CustTab";
 import PageHeadingComponent from "../../GenericComponents/GeneralComponents/PageHeadingComponent";
-import {ShareCircle} from "../../SVGComponents";
+import { ShareCircle } from "../../SVGComponents";
 import CodeBlock from "../../Syntax Highlights/CodeBlock";
 
 const columns = [
-  {field: "id", headerName: "id", width: 100},
+  { field: "id", headerName: "id", width: 100 },
   {
     field: "avatar",
     headerName: "Avatar",
     flex: 1,
     renderCell: (params) => (
-      <div style={{display: "flex", alignItems: "center"}}>
+      <div style={{ display: "flex", alignItems: "center" }}>
         <img
           src={params.row.image}
           alt={params.row.fullName}
-          style={{width: 40, height: 40}}
+          style={{ width: 40, height: 40 }}
         />
       </div>
     ),
   },
-  {field: "fullName", headerName: "Full Name", flex: 1},
-  {field: "personalEmail", headerName: "Personal Email", flex: 1},
-  {field: "workEmail", headerName: "Work Email", flex: 1},
-  {field: "category", headerName: "Category", flex: 1},
+  { field: "fullName", headerName: "Full Name", flex: 1 },
+  { field: "personalEmail", headerName: "Personal Email", flex: 1 },
+  { field: "workEmail", headerName: "Work Email", flex: 1 },
+  { field: "category", headerName: "Category", flex: 1 },
   {
     field: "status",
     headerName: "Status",
@@ -199,7 +199,7 @@ export const SampleDataGrid = () => {
       />
 
       <Stack spacing={4}>
-        <Paper elevation={1} style={{width: "100%"}}>
+        <Paper elevation={1} style={{ width: "100%" }}>
           <Typography variant="h4">Basic</Typography>
           <CustTab
             label1={"Preview"}
@@ -211,7 +211,7 @@ export const SampleDataGrid = () => {
                   columns={columns}
                   initialState={{
                     pagination: {
-                      paginationModel: {page: 0, pageSize: 10},
+                      paginationModel: { page: 0, pageSize: 10 },
                     },
                   }}
                   // checkboxSelection
@@ -223,7 +223,7 @@ export const SampleDataGrid = () => {
           />
         </Paper>
 
-        <Paper elevation={1} style={{width: "100%"}}>
+        <Paper elevation={1} style={{ width: "100%" }}>
           <Typography variant="h4">Custom</Typography>
           <CustTab
             label1={"Preview"}
@@ -235,7 +235,7 @@ export const SampleDataGrid = () => {
                   columns={columns}
                   initialState={{
                     pagination: {
-                      paginationModel: {page: 0, pageSize: 10},
+                      paginationModel: { page: 0, pageSize: 10 },
                     },
                   }}
                   // checkboxSelection
