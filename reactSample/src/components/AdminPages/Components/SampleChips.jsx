@@ -1,5 +1,5 @@
-import {Box, Chip, Grid, Stack, Typography} from "@mui/material";
-import React, {Fragment} from "react";
+import { Box, Chip, Grid, Stack, Typography } from "@mui/material";
+import React, { Fragment } from "react";
 
 export const SampleChips = () => {
   return (
@@ -9,11 +9,8 @@ export const SampleChips = () => {
           <Grid item desktop={12}>
             <Typography variant="h4">Chips</Typography>
             <Stack direction="row" spacing={1}>
-              <Chip label="Primary" color="primary" />
-              <Chip label="Secondary" variant="filled" color="secondary" />
-              <Chip label="Info" color="info" variant="filled" />
-              <Chip label="Success" color="success" variant="filled" />
-              <Chip label="Warning" color="warning" variant="filled" />
+              <Chip label="Primary" variant="filled" color="success" />
+              <Chip label="Secondary" variant="filled" color="error" />
             </Stack>
           </Grid>
         </Grid>

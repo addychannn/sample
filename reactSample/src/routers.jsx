@@ -1,25 +1,25 @@
-import {Box} from "@mui/material";
+import { Box } from "@mui/material";
 
-import React, {useState} from "react";
+import React, { useState } from "react";
 
-import {Components} from "./components/AdminPages/Components/Components";
+import { Components } from "./components/AdminPages/Components/Components";
 import Sidebar from "./components/GenericComponents/SidebarComponents/SideBar";
-import {HomePage} from "./components/HomePage/HomePage";
-import {ThemeProvider} from "@mui/material/styles";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
-import {dark, lightTheme} from "./config/theme";
-import {BasicForm} from "./components/AdminPages/BasicForm/BasicForm";
-import {DialogPage} from "./components/Pages/DialogPage";
-import {Richtext} from "./components/Pages/Richtext";
-import {DisplayIcon} from "./components/AdminPages/Components/DisplayIcon";
-import {SampleDataGrid} from "./components/AdminPages/Components/SampleDataGrid";
+import { HomePage } from "./components/HomePage/HomePage";
+import { ThemeProvider } from "@mui/material/styles";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { dark, lightTheme } from "./config/theme";
+import { BasicForm } from "./components/AdminPages/BasicForm/BasicForm";
+import { DialogPage } from "./components/Pages/DialogPage";
+import { Richtext } from "./components/Pages/Richtext";
+import { DisplayIcon } from "./components/AdminPages/Components/DisplayIcon";
+import { SampleDataGrid } from "./components/AdminPages/Components/SampleDataGrid";
 
-import {SampleColors} from "./components/Pages/SampleColors";
-import {SampleTypo} from "./components/Pages/SampleTypo"; 
-import {SampleChart} from "./components/Pages/SampleChart";
-import {CodePage} from "./components/Pages/CodePage";
+import { SampleColors } from "./components/Pages/SampleColors";
+import { SampleTypo } from "./components/Pages/SampleTypo";
+import { SampleChart } from "./components/Pages/SampleChart";
+import { CodePage } from "./components/Pages/CodePage";
 
-import {DropzonePage} from "./components/Pages/DropzonePage";
+import { DropzonePage } from "./components/Pages/DropzonePage";
 
 export const Routers = () => {
   const [darkMode, setDarkMode] = useState(false);

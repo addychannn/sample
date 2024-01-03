@@ -1,5 +1,5 @@
-import {grey} from "@mui/material/colors";
-import {createTheme} from "@mui/material/styles";
+import { grey } from "@mui/material/colors";
+import { createTheme } from "@mui/material/styles";
 
 const lightTheme = createTheme({
   palette: {
@@ -30,7 +30,7 @@ const lightTheme = createTheme({
       main: "#03C04A",
     },
     neutral: {
-      main: "#fff",
+      main: "#919EAB",
     },
     icon: {
       main: "#757575",
@@ -43,7 +43,7 @@ const lightTheme = createTheme({
       paper: "#FBFBFC",
     },
   },
-  shadows: Array(25).fill("none"),
+
   spacing: 8,
   breakpoints: {
     values: {
@@ -59,8 +59,9 @@ const lightTheme = createTheme({
     drawerWidth: "187px",
     drawerWidthOpen: "45px",
     contrastText: "#5A5A5A",
-    baseBg: "#FBFBFC",
+    baseBg: "rgb(30,30,30)",
   },
+  shadows: Array(25).fill("none"),
   typography: {
     fontSize: 11,
     color: "#595959",
@@ -569,9 +570,9 @@ const lightTheme = createTheme({
               borderColor: "none",
             },
             "& .MuiDataGrid-columnHeader:focus, .MuiDataGrid-columnHeader:focus-within, .MuiDataGrid-cell:focus":
-              {
-                outline: "none",
-              },
+            {
+              outline: "none",
+            },
             "& .MuiDataGrid-columnHeaderTitle": {
               fontWeight: "800",
               fontSize: "16px",
@@ -700,12 +701,17 @@ const dark = createTheme({
   shadows: Array(25).fill("none"),
   typography: {
     fontSize: 11,
-    color: "#A9A9A9",
+    color: "#595959",
     fontFamily: ["Lato"].join(","),
     at: {
       fontSize: 18,
-      color: "#FFF",
+      color: "#000",
       fontStyle: "bold",
+    },
+    h1: {
+      fontFamily: "Lato",
+      fontWeight: 700,
+      fontSize: "64px",
     },
     h2: {
       fontFamily: "Lato",
@@ -734,12 +740,12 @@ const dark = createTheme({
     },
     h5: {
       fontFamily: "Lato",
-      fontWeight: 700,
-      fontSize: "19px",
+      fontWeight: 400,
+      fontSize: "18px",
     },
     h6: {
       fontFamily: "Lato",
-      fontWeight: 100,
+      fontWeight: 400,
       fontSize: "16px",
     },
     description: {
@@ -967,7 +973,28 @@ const dark = createTheme({
         root: {
           borderRadius: "8px",
           minWidth: "50px",
-          padding: "8px 22px",
+          fontSize: "12px",
+          fontWeight: 500,
+          padding: "8px",
+          gap: "4px",
+
+          color: "#638BCC",
+          background: "#F2F5FA",
+
+          "&.MuiChip-colorSuccess": {
+            color: "#2E7918",
+            background: "#F1fcdc",
+          },
+          "&.MuiChip-colorError": {
+            color: "#DB3241",
+            background: "#FFE6D9",
+          },
+          ".MuiChip-deleteIcon": {
+            color: "#638BCC",
+          },
+          ".MuiChip-deleteIcon:hover": {
+            color: "#89a2cc",
+          },
         },
       },
     },
@@ -1181,9 +1208,9 @@ const dark = createTheme({
               borderColor: "none",
             },
             "& .MuiDataGrid-columnHeader:focus, .MuiDataGrid-columnHeader:focus-within, .MuiDataGrid-cell:focus":
-              {
-                outline: "none",
-              },
+            {
+              outline: "none",
+            },
             "& .MuiDataGrid-columnHeaderTitle": {
               fontWeight: "800",
               fontSize: "16px", // Replace with your desired font size
@@ -1270,4 +1297,4 @@ const combinedTheme = {
   echarts: echartsTheme,
 };
 
-export {lightTheme, dark, combinedTheme};
+export { lightTheme, dark, combinedTheme };

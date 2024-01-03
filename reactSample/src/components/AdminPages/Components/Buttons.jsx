@@ -1,5 +1,5 @@
-import {Button, Grid, Stack, Typography} from "@mui/material";
-import React, {Fragment} from "react";
+import { Button, Grid, Stack, Typography } from "@mui/material";
+import React, { Fragment } from "react";
 
 export const Buttons = () => {
   return (
@@ -8,7 +8,7 @@ export const Buttons = () => {
         <Grid item desktop={12}>
           <Typography variant="h2">Buttons</Typography>
           <Stack direction="row" spacing={1}>
-            <Button color="primary_100">Primary</Button>
+            <Button color="primary">Primary</Button>
             <Button color="secondary">Secondary</Button>
             <Button color="tertiary">Tertiary</Button>
             <Button color="quaternary">Quaternary</Button>
