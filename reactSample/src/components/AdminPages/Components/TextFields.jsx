@@ -1,12 +1,12 @@
-import {Grid, Typography} from "@mui/material";
-import {useFormik} from "formik";
-import React, {Fragment, useState} from "react";
-import {FormikAutocomplete} from "../../GenericComponents/FormikHelpers/FormikAutocomplete";
-import {FormikTextField} from "../../GenericComponents/FormikHelpers/FormikTextfield";
-import {SearchTextField} from "../../GenericComponents/GeneralComponents/CustTextField";
-import {NAMES} from "../../../config/enums";
-import {PersonOutlineRounded} from "@mui/icons-material";
-import {FormikTextfieldPass} from "../../GenericComponents/FormikHelpers/FormikTextfieldPass";
+import { Grid, Typography } from "@mui/material";
+import { useFormik } from "formik";
+import React, { Fragment, useState } from "react";
+import { FormikAutocomplete } from "../../GenericComponents/FormikHelpers/FormikAutocomplete";
+import { FormikTextField } from "../../GenericComponents/FormikHelpers/FormikTextfield";
+import { SearchTextField } from "../../GenericComponents/GeneralComponents/CustTextField";
+import { NAMES } from "../../../config/enums";
+import { PersonOutlineRounded } from "@mui/icons-material";
+import { FormikTextfieldPass } from "../../GenericComponents/FormikHelpers/FormikTextfieldPass";
 
 export const TextFields = () => {
   const [userSearchText, setUserSearchText] = useState("");

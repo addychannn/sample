@@ -1,6 +1,6 @@
-import React, {Fragment} from "react";
-import {InfoRounded} from "@mui/icons-material";
-import {TextField, Tooltip} from "@mui/material";
+import React, { Fragment } from "react";
+import { InfoRounded } from "@mui/icons-material";
+import { TextField, Tooltip } from "@mui/material";
 export const FormikTextField = (props) => {
   const {
     variant = "outlined",
@@ -42,7 +42,7 @@ export const FormikTextField = (props) => {
       helperText={helpertxt}
       value={fieldval}
       {...props}
-      SelectProps={{IconComponent: () => null}}
+      SelectProps={{ IconComponent: () => null }}
       inputProps={{
         maxLength: maximumLength,
         minLength: minimumLength,
@@ -57,7 +57,7 @@ export const FormikTextField = (props) => {
         endAdornment: message ? (
           <Fragment>
             <Tooltip title={message}>
-              <InfoRounded sx={{cursor: "pointer"}} color="info" />
+              <InfoRounded sx={{ cursor: "pointer" }} color="info" />
             </Tooltip>
           </Fragment>
         ) : (

@@ -33,7 +33,7 @@ export const Buttons = () => {
               Quaternary
             </Button>
             <Button color="info" variant="outlined">
-              Info
+              Info 
             </Button>
             <Button color="warning" variant="outlined">
               warning
